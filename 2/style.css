@@ -1,0 +1,11 @@
+#header {
+    width: 900px;
+    height: 200px; 
+    background-color:#00B060;
+    margin-bottom: 10px;
+}
+
+#header h1 { 
+    font: 20 px;
+    margin-right: 20 px; 
+    }
