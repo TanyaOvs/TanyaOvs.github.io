@@ -1,19 +1,19 @@
 header{
-    width: 100 %;
-    height: 150 px; 
+    width: 100%;
+    height: 150px; 
     background-color:#68006C;
-    margin-bottom: 50 px;
+    margin-bottom: 50px;
 }
 
 #name{
     color:#CF5FD3;
-    font: small-caps bold 1.2 rem sans-serif;
-    font-size: 36 px;
+    font: small-caps bold 1.2rem sans-serif;
+    font-size: 36px;
     margin-top: auto;
 }
 
 .main_header{
-    width: 100 %;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,30 +21,30 @@ header{
 
 .main_header ul{
     list-style: none;
-    width: 60 %;
+    width: 60%;
     text-align: center;
 }
 
 .main_header ul li{
     display: inline-block;
-    margin: 10 px 20 px;
+    margin: 10px 20px;
 }
 
 .main_header ul li a{
     color: azure;
     text-decoration: none;
-    font: small-caps bold 1.2 rem sans-serif
+    font: small-caps bold 1.2rem sans-serif
 }
 
 #kitty_id{ 
     float: left;
-    margin: 10 px; 
-    width: 100 px; 
-    height: 100 px;
+    margin: 10px; 
+    width: 100px; 
+    height: 100px;
 }
 
 .content, .table{
-    width: 960 px;
+    width: 960px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
