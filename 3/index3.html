@@ -1,1 +1,232 @@
+<!DOCTYPE html>
+
+<html lang = "ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Второе задание</title>
+    <link rel="stylesheet" href = "style.css">
+  </head>
+
+  <body>
+
+    <!--Шапка сайта-->
+    <header class="header">
+      <img id ="#kitty_id" src="kitty.png" alt="Логотип сайта с котиком">
+      <div id="name">Название моего сайта</div>
+        <ul>
+          <li><a href="https://emojilo.com/ru/">Первая ссылка</a></li>
+          <li><a href="https://www.youtube.com/watch?v=mYEA5A0Bjyo">Вторая ссылка</a></li>
+          <li><a href="https://translate.google.com/">Третья ссылка</a></li>
+        </ul>
+    </header> 
+
+      <nav class="content">
+        <!-- Список гиперссылок -->
+        <ul>
+            <li><a href="http://kubsu.ru/">КубГУ</a></li>
+            <li><a href="https://kubsu.ru/">КубГУ</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/Цветок"><img src = "image.jpg" alt = "Цветок" style="width: 600px"></a></li>
+            <li><a href ="/inside.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+            <li><a href ="/index.html">Сокращенная ссылка на главную страницу</a></li>
+            <li><a href = "#first_poem">Ссылка на фрагмент страницы с использованием якоря</a></li>
+        </ul>
+        
+        <h2>Фрагмент текста для наглядности работы якоря</h2>
+        <p> Рэй Брэдбери – американский классик научной фантастики и фэнтези, обладатель звезды на Голливудской аллее славы, титула «Гранд-мастер», медали фонда Национальной книжной премии, Национальной медали США в области искусств.</p>
+        <p> В честь Рэя Брэдбери названы астероид и кратер на Марсе.</p>
+        <p> Рэй Дуглас Брэдбери родился 22 августа 1920 года в Уокигане штата Иллинойс.</p>
+        <p> А во время Великой депрессии в 1934 году его семья перебралась в Лос-Анджелес к родственникам. Именно там Рэй в 1938 году окончил среднюю школу.</p>
+        <p> Но в университет пойти не смог из-за тяжелого финансового состояния родителей. Поэтому несколько лет он трудился продавцом газет.</p>
+        <p> По поводу того, что не удалось прослушать курс лекций в колледже, Брэдбери не расстраивался, говоря, что их ему заменили библиотеки.</p>
+        <p> Писательством Брэдбери стал заниматься еще в двенадцать лет, когда создал продолжение к «Великому воину Марса» Эдгара Берроуза,</p>
+        <p> потому что не мог позволить купить себе вторую часть книги и решил додумать самостоятельно, что же там могло произойти.</p>
+        <p>А к двадцати годам Рэй уже на сто процентов был уверен в том, что его дальнейшая жизнь должна быть связана с литературой.</p>
+        <p id = "first_poem"></p>
+        <p> Первой публикацией Брэдбери стало стихотворение «Памяти Вилла Роджерса», изданное в уокиганской газете в 1936 году</p>
+        <p> А в 1937 году он вступил в лос-анджелесскую «Лигу научных фантастов», после чего начал печататься в дешевых журналах.</p>
+
+        <ul>
+          <li><a href ="inside.html?first=vibor1&second=vibor2&third=vibor3">Ссылка с тремя параметрами</a></li>
+          <li><a href ="index.html?id=main_id">Ссылка с параметром id</a></li>
+          <li><a href ="./inside.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+          <li><a href ="./about/outside.html">Относительная ссылка на страницу в каталоге about</a></li>
+          <li><a href ="../inside1.html">Относительная ссылка на страницу уровнем выше текущего</a></li>
+          <li><a href ="../../inside2.html">Относительная ссылка на страницу двумя уровнями выше текущего</a></li>
+          <li><p>В честь <a href="https://ru.wikipedia.org/wiki/Брэдбери,_Рэй">Рэя Брэдбери</a> названы астероид и кратер на Марсе (контекстная ссылка).</p></li>
+          <li><a href="https://ru.wikipedia.org/wiki/Брэдбери,_Рэй#Писательский_успех">Cсылка на фрагмент страницы стороннего сайта</a></li>
+          <li><img src = "zones.jpg" usemap="#flower_map" alt="Цветочек">
+          <map name="flower_map">
+            <area shape="rect" coords="0,0,200,100" href="https://ru.wikipedia.org/wiki/Брэдбери,_Рэй" alt="Прямоугольная область">
+            <area shape="circle" coords="350,260,100" href="https://ru.wikipedia.org/wiki/Брэдбери,_Рэй" alt="Круглая область">
+          </map> </li>
+          <li><a>Ссылка без href</a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/Брэдбери,_Рэй" rel="nofollow"> Ссылка, по которой запрещен переход поисковикам </a></li>
+          <li><a href="https://ru.wikipedia.org/wiki/Брэдбери,_Рэй" rel="noindex"> Ссылка, запрещенная для индексации поисковиками </a></li>
+        </ul>
+
+        <p>Нумерованный список ссылок с подписями title: </p>
+        <ol>
+          <li><a href = "https://www.youtube.com/" title="Youtube">Youtube</a></li>
+          <li><a href = "https://translate.google.com/" title="Переводчик">Переводчик</a></li>
+          <li><a href = "https://mail.ru/" title="Mail.ru">Mail.ru</a></li>
+          <li><a href = "https://typerun.top/#rus_basic" title="Typerun">Tuperun</a></li>
+        </ol>
+
+        <ul>
+          <li><a href="ftp://tanyaovs:12345@ftp.server.ru/first_task.rar">Ссылка на файл на сервере FTP с авторизацией</a></li>
+        </ul>
+    
+
+        <!-- Таблица -->
+        <table class="table">
+          <caption><b>Моя таблица</b></caption>
+          <thead id="head_table">
+            <tr>
+              <th>Столбец 1</th>
+              <th>Столбец 2</th>
+              <th>Столбец 3</th>
+              <th>Столбец 4</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- Первая строка -->
+            <tr class="NEchetnaya">
+              <td> Ячейка 11 </td>
+              <td> Ячейка 12 </td>
+              <td> Ячейка 13 </td>
+              <td> Ячейка 14 </td>
+            </tr>
+            <!-- Вторая строка -->
+            <tr class="chetnaya">
+              <td colspan="2"> Ячейка 21 И Ячейка 22 </td>
+              <td> Ячейка 23 </td>
+              <td> Ячейка 24 </td>
+            </tr>
+            <!-- Третья строка -->
+            <tr class="NEchetnaya">
+              <td colspan="4"> Ячейка 31 объединенная с 32, 33, 34 ячейками</td>
+            </tr>
+            <!-- Четвертая строка -->
+            <tr class="chetnaya">
+              <td> Ячейка 41 </td>
+              <td> Ячейка 42 </td>
+              <td> Ячейка 43 </td>
+              <td> Ячейка 44 </td>
+            </tr>
+            <!-- Пятая строка -->
+            <tr class="NEchetnaya">
+              <td> Ячейка 51 </td>
+              <td> Ячейка 52 </td>
+              <td colspan="2"> Ячейка 53 И Ячейка 54</td>
+            </tr>
+            <!-- Шестая строка -->
+            <tr class="chetnaya">
+              <td> Ячейка 61 </td>
+              <td> Ячейка 62 </td>
+              <td> Ячейка 63 </td>
+              <td> Ячейка 64 </td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <!-- Форма -->
+        <h2>Форма</h2>
+        <form action="/"
+          method="POST"></form>
+      
+        <ol>
+
+          <li>
+            <label>
+            ФИО:<br />
+            <input name="FIO"
+              type="text"
+              placeholder="Иванов Иван Иванович" />
+          </label><br />
+          </li>
+
+          <li>
+            <label>
+            Телефон:<br />
+            <input name="phone"
+              type="tel"
+              placeholder="Введите номер телефона" />
+          </label><br />
+          </li>
+
+          <li>
+            <label>
+            E-mail:<br />
+            <input name="email"
+              type="email"
+              placeholder="Введите вашу почту" />
+          </label><br />
+          </li>
+          
+          <li>
+            <label>
+            Дата рождения:<br />
+            <input name="date"
+              value="2023-09-01"
+              type="date"/>
+          </label><br />
+          </li>
+
+          <li>
+          Пол: <br />
+          <label><input type="radio"
+            name="gender" value="female" />
+            Женский</label>
+          <label><input type="radio"
+            name="gender" value="male" />
+            Мужской</label><br />
+          </li>
+          
+          <li>
+            <label>
+              Любимый язык программирования: <br />
+              <select name="language" multiple="multiple">
+                <option value="Pascal">Pascal</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="Haskell">Haskell</option>
+                <option value="Clojure">Clojure</option>
+                <option value="Prolog">Prolog</option>
+                <option value="Scala">Scala</option> 
+              </select>
+            </label><br />
+          </li>
+          
+          <li>
+            <label>
+              Биография: <br />
+              <textarea name="bio" placeholder="Напишите о себе"></textarea>
+            </label><br />
+          </li>
+
+          <li> 
+            Соглашение: <br />
+          <label><input type="checkbox" name="check" required/>
+            C контрактом ознакомлен(а)</label><br />
+          </li>
+
+          <li><input type="submit" value="Сохранить" /></li>
+        
+        </ol>
+      </nav>
+
+    <footer>
+      (c) Овсянникова Татьяна 2023
+    </footer>
+
+  </body>
+
+</html>
 
