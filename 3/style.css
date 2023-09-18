@@ -1,0 +1,60 @@
+header{
+    width: 100%;
+    height: 150px; 
+    background-color:#68006C;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#name{
+    color:#CF5FD3;
+    font: small-caps bold 1.2rem sans-serif;
+    font-size: 36px;
+    margin-top: 30px;
+}
+
+header ul{
+    list-style: none;
+    width: 60%;
+    text-align: center;
+    margin-top: -70px;
+}
+
+header ul li{
+    display: inline;
+    margin: 10px 50px;
+}
+
+header ul li a{
+    color: azure;
+    text-decoration: none;
+    font: small-caps bold 1.2rem sans-serif;
+    font-size: 30px;
+}
+
+#kitty_id{ 
+    float: left;
+    margin: 10px; 
+    width: 100px; 
+    height: 100px;
+}
+
+.content, .table{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table caption{
+    background-color:#4ab446;
+}
+
+.NEchetnaya{
+    background-color:#8de66a;
+}
+
+#head_table, .chetnaya{
+    background-color:#d06ad4;
+}
