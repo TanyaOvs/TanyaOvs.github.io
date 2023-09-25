@@ -14,8 +14,22 @@
     text-align: center;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
+#kitty_id{ 
+    float: left;
+    margin: 10px; 
+    width: 100px; 
+    height: 100px;
+}
+
+.name{
+    color:azure;
+    font: small-caps bold 1.2rem sans-serif;
+    font-size: 36px;
+    margin-left: 20px;
+}
 
 .main_header ul li{
     display: inline-flex;
@@ -27,11 +41,6 @@
     text-decoration: none;
     font: small-caps bold 1.2rem sans-serif;
     font-size: 30px;
-}
-
-
-.first_table{
-    display: flex;
 }
 
 @media(max-width: 1280px){
@@ -54,20 +63,6 @@
     }
 }
 
-.name{
-    color:azure;
-    font: small-caps bold 1.2rem sans-serif;
-    font-size: 36px;
-    margin-left: 20px;
-}
-
-#kitty_id{ 
-    float: left;
-    margin: 10px; 
-    width: 100px; 
-    height: 100px;
-}
-
 .content, .table{
     width: 960px;
     margin-left: auto;
@@ -87,6 +82,10 @@ table caption{
     border-style: double;
 }
 
+.first_table{
+    display: flex;
+}
+
 .NEchetnaya{
     background-color:#8de66a;
 }
@@ -95,9 +94,10 @@ table caption{
     background-color:#d06ad4;
 }
 
-footer{
-    background-color:#d06ad4;
-}
 body{
     background-color:rgb(254, 240, 255);
+}
+
+footer{
+    background-color:#d06ad4;
 }
