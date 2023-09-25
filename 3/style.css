@@ -32,7 +32,6 @@
 
 .first_table{
     display: flex;
-    order: 1;
 }
 
 @media(max-width: 1280px){
