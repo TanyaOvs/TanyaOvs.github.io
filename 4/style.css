@@ -1,0 +1,35 @@
+.header{
+    background-color:#68006C;
+}
+.header_name{
+    color:azure;
+    font: small-caps bold 1.2rem sans-serif;
+    font-size: 36px;
+}
+
+.header_links ul li a{
+    color: azure;
+    font: small-caps bold 1.2rem sans-serif;
+    font-size: 30px;
+}
+
+table caption{
+    background-color:#4ab446;
+    border-style: double;
+}
+
+.table{
+    border-style: double;
+}
+
+.NEchetnaya{
+    background-color:#8de66a;
+}
+
+#head_table, .chetnaya, footer{
+    background-color:#d06ad4;
+}
+
+body{
+    background-color:rgb(254, 240, 255);
+}
