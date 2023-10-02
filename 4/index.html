@@ -5,46 +5,43 @@
     <head>
         <meta charset="UTF-8">
         <title>Мой сайт</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
 
     <body>
         <!-- Шапка сайта -->
-        <header class="header d-flex w-100">
-            <div class="h_container">
-                <div class="row w-100">
-                    <div class="col-md-6">
+        <header class="header">
+            <div class="container-fluid">
+                <div class="row justify-content-md-between">
+                    <div>
                         <div class="main_header d-flex align-items-center">
-                            <img id="kitty_id" src="kitty.png" alt="Логотип сайта с котиком" class="mr-2">
+                            <img id="kitty_id" src="kitty.png" alt="Логотип сайта с котиком" class="mr-4">
                             <h1 class="header_name">Название</h1>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <nav class="header_links d-flex flex-column flex-md-row list-unstyled text-md-center">
-                            <ul class="list-unstyled d-flex.flex-column">
-                                <li class="mr-4"><a href="https://emojilo.com/ru/">Первая ссылка</a></li>
-                                <li class="mr-4"><a href="https://www.youtube.com/watch?v=mYEA5A0Bjyo">Вторая ссылка</a></li>
-                                <li class="mr-4"><a href="https://translate.google.com/">Третья ссылка</a></li>
-                            </ul>
-                        </nav>
+                    <div class="col-md-6">
+                      <nav class="header_links">
+                          <ul class="list-unstyled d-flex flex-column justify-content-md-between flex-md-row">
+                              <li><a href="https://emojilo.com/ru/">Первая ссылка</a></li>
+                              <li><a href="https://www.youtube.com/watch?v=mYEA5A0Bjyo">Вторая ссылка</a></li>
+                              <li><a href="https://translate.google.com/">Третья ссылка</a></li>
+                          </ul>
+                      </nav>
                     </div>
                 </div>
             </div>
         </header>
 
-        <div class="container d-flex.flex-column w-100">
+        <div class="container d-flex flex-column w-100 order-xs-1">
             <!-- Список гиперссылок -->
-            <div class="links">
+            <div class="links ">
                 <ul>
                     <li><a href="http://kubsu.ru/">КубГУ</a></li>
                     <li><a href="https://kubsu.ru/">КубГУ</a></li>
-                    <li><a href="https://ru.wikipedia.org/wiki/Цветок"><img src = "image.jpg" alt = "Цветок" style="width: 600px"></a></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/Цветок"><img src = "image.jpg" class="img-fluid" alt = "Цветок" style="width: 600px"></a></li>
                     <li><a href ="/inside.html">Сокращенная ссылка на внутреннюю страницу</a></li>
                     <li><a href ="/index.html">Сокращенная ссылка на главную страницу</a></li>
                     <li><a href = "#first_poem">Ссылка на фрагмент страницы с использованием якоря</a></li>
@@ -73,7 +70,7 @@
                   <li><a href ="../../inside2.html">Относительная ссылка на страницу двумя уровнями выше текущего</a></li>
                   <li><p>В честь <a href="https://ru.wikipedia.org/wiki/Брэдбери,_Рэй">Рэя Брэдбери</a> названы астероид и кратер на Марсе (контекстная ссылка).</p></li>
                   <li><a href="https://ru.wikipedia.org/wiki/Брэдбери,_Рэй#Писательский_успех">Cсылка на фрагмент страницы стороннего сайта</a></li>
-                  <li><img src = "zones.jpg" usemap="#flower_map" alt="Цветочек">
+                  <li><img src = "zones.jpg" usemap="#flower_map" class="img-fluid" alt="Цветочек">
                   <map name="flower_map">
                     <area shape="rect" coords="0,0,200,100" href="https://ru.wikipedia.org/wiki/Брэдбери,_Рэй" alt="Прямоугольная область">
                     <area shape="circle" coords="350,260,100" href="https://ru.wikipedia.org/wiki/Брэдбери,_Рэй" alt="Круглая область">
@@ -97,8 +94,9 @@
             </div>
 
             <!-- Таблица -->
-            <caption><b>Моя таблица</b></caption>
-            <div class="first_table w-100">
+            
+            <div class="first_table w-100 order-xs-0">
+                <caption><b>Моя таблица</b></caption>
                 <table class="table">
                   <thead id="head_table">
                     <tr>
