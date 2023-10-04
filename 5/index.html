@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Калькулятор товаров</title>
+        <script src="code.js" defer></script>
+    </head>
+
+    <body style="background-color: rgb(223, 143, 226);">
+        <h1>Калькулятор товаров</h1>
+
+        <!-- Форма -->
+        <div style="width: 600px; padding: 10px; background-color: rgb(252, 227, 250);">
+            <form action="/" method="POST">
+                <label> 
+                    <b style="font-size: large;">Количество товаров:</b> 
+                    <input id="numberOfProducts" name="numberOfProducts" type="text">
+                </label> <br/>
+
+                <label>
+                    <b style="font-size: large;">Выбор товара:</b><br/>
+                    <select id="Product" name="Product" multiple="multiple">
+                        <option value="NaborNakleek">Набор наклеек (150 рублей)</option>
+                        <option value="PlushToy">Мягкая игрушка (400 рублей)</option>
+                        <option value="Pajamas">Пижама (600 рублей)</option>
+                        <option value="Plaid">Плед (800 рублей)</option>
+                    </select>
+                </label> <br/>
+
+                <label class="calculate">
+                    <b style="font-size: large;">Нажмите, чтобы выполнить расчёт:</b>
+                    <input id="calculateButton" type="button" name="calculateButton" value="Подсчёт стоимости" onclick="onClick()">
+                </label><br />
+            </form>
+
+            <div id="result" style="background-color: rgb(223, 175, 238); width: 500px;"></div>
+        </div>
+    </body>
+
+</html> 
