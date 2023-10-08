@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 
 <html lang="ru">
+
     <head>
         <meta charset="UTF-8">
         <title>Калькулятор товаров</title>
         <script src="code.js" defer></script>
+        <link rel="stylesheet" href = "style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
-    <body style="background-color: rgb(223, 143, 226);">
-        <h1>Калькулятор товаров</h1>
+    <body>
+        <header class="header">
+            <div class="header_elements">
+                <img id="#kitty_id" src="kitty.png" alt="Логотип сайта с котиком">
+                <h1 class="header_name">Калькулятор товаров</h1>
+            </div>
+        </header>
 
-        <!-- Форма -->
-        <div style="width: 600px; padding: 10px; background-color: rgb(252, 227, 250);">
-            <form action="/" method="POST">
-                <label> 
-                    <b style="font-size: large;">Количество товаров:</b> 
-                    <input id="numberOfProducts" name="numberOfProducts" type="text">
-                </label> <br/>
+        <div class="content">
+            <!-- Форма -->
+            <div class="form">
+                <form action="/" method="POST">
+                    <label> 
+                        <b>Количество товаров:</b> 
+                        <input id="numberOfProducts" name="numberOfProducts" type="text">
+                    </label> <br/>
 
-                <label>
-                    <b style="font-size: large;">Выбор товара:</b><br/>
-                    <select id="Product" name="Product" multiple="multiple">
-                        <option value="NaborNakleek">Набор наклеек (150 рублей)</option>
-                        <option value="PlushToy">Мягкая игрушка (400 рублей)</option>
-                        <option value="Pajamas">Пижама (600 рублей)</option>
-                        <option value="Plaid">Плед (800 рублей)</option>
-                    </select>
-                </label> <br/>
+                    <label>
+                        <b>Выбор товара:</b><br/>
+                        <select id="Product" name="Product" multiple="multiple">
+                            <option value="NaborNakleek">Набор наклеек (150 рублей)</option>
+                            <option value="PlushToy">Мягкая игрушка (400 рублей)</option>
+                            <option value="Pajamas">Пижама (600 рублей)</option>
+                            <option value="Plaid">Плед (800 рублей)</option>
+                        </select>
+                    </label> <br/>
 
-                <label class="calculate">
-                    <b style="font-size: large;">Нажмите, чтобы выполнить расчёт:</b>
-                    <input id="calculateButton" type="button" name="calculateButton" value="Подсчёт стоимости" onclick="onClick()">
-                </label><br />
-            </form>
+                    <label class="calculate">
+                        <b>Нажмите, чтобы выполнить расчёт:</b>
+                        <input id="calculateButton" type="button" name="calculateButton" value="Подсчёт стоимости" onclick="onClick()">
+                    </label><br />
+                </form>
 
-            <div id="result" style="background-color: rgb(223, 175, 238); width: 500px;"></div>
+                <div id="result"></div>
+            </div>
         </div>
+
+        <footer><p>(c) Овсянникова Татьяна 2023</p></footer>
+
     </body>
 
 </html> 
