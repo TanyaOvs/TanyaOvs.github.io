@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Калькулятор товаров</title>
+        <script src="code.js" defer></script>
+        <link rel="stylesheet" href = "style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header_elements">
+                <img id="#kitty_id" src="kitty.png" alt="Логотип сайта с котиком">
+                <h1 class="header_name">Калькулятор товаров</h1>
+            </div>
+        </header>
+
+        <div class="content">
+            <!-- Форма -->
+            <div class="form">
+                <form>
+                    <label> 
+                        <b>Количество товаров:</b> 
+                        <input id="numberOfProducts" name="numberOfProducts" type="text">
+                    </label> <br/>
+
+                    <label>
+                        <b>Выбор товара:</b><br/>
+                        <select id="Product" name="Product">
+                            <option value="400">Мягкая игрушка (400 рублей)</option>
+                            <option value="600" >Пижама (600 рублей)</option>
+                            <option value="800">Плед (800 рублей)</option>
+                        </select>
+                    </label> <br/>
+                </form>
+
+                <div id="result"></div>
+            </div>
+        </div>
+
+        <footer><p>(c) Овсянникова Татьяна 2023</p></footer>
+
+    </body>
+
+</html> 
