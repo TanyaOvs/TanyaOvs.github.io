@@ -25,16 +25,32 @@
                     <label> 
                         <b>Количество товаров:</b> 
                         <input id="numberOfProducts" name="numberOfProducts" type="text">
-                    </label> <br/>
+                    </label> <br/><br/>
+                     
+                    <b>Выбор товара:</b> <br/>
+                    <label><input type="radio" name="product" value="400" />Игрушка (400 рублей)</label><br/>
+                    <label><input type="radio" name="product" value="600" />Пижама (600 рублей)</label><br/>
+                    <label><input type="radio" name="product" value="800" />Плед (800 рублей)</label><br/>
+                    <br/>
 
-                    <label>
-                        <b>Выбор товара:</b><br/>
-                        <select id="Product" name="Product">
-                            <option value="400">Мягкая игрушка (400 рублей)</option>
-                            <option value="600" >Пижама (600 рублей)</option>
-                            <option value="800">Плед (800 рублей)</option>
+                    <label id="selectForSecond" style="display:none">
+                        <b>Опции для товара №2:</b><br/>
+                        <select name="selectedOption">
+                            <option value="100">Одноцветная (+100 рублей)</option>
+                            <option value="300" >Двухцветная (+300 рублей)</option>
+                            <option value="1800">С принтом (+1800 рублей)</option>
                         </select>
-                    </label> <br/>
+                    </label><br/>
+
+                    <label id="checkboxForThird" style="display:none">
+                        <b>Опции для товара №3:</b><br/>
+                        <input type="checkbox" name="check"/>Клетчатый
+                        <input type="checkbox" name="check"/>Полосатый
+                        <input type="checkbox" name="check"/>В горошек
+                        
+                    </label>
+
+                    
                 </form>
 
                 <div id="result"></div>
