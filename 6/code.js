@@ -9,7 +9,6 @@ function onChange(event) {
     //Поле для вывода цены
     let result = document.getElementById("result");
 
-    
     //Первоначальная цена товара
     let price = parseInt(selectedProduct);
     // Создание регулярного выражения для проверки цены
@@ -19,20 +18,18 @@ function onChange(event) {
     if (pattern.test(inputValue)) {
         console.log("Данные введены корректно.");
         priceIsCorrect = true;
-    } else 
-    {
-        alert("Ошибка: количество товаров не указано или введены недопустимые символы");
+    } else {
+        alert("Количество товаров не указано или введены недопустимые символы");
     }
-    
     //Изменение html файла при изменении товара
     let selectForSecond = document.getElementById("selectForSecond");
-    let checkboxForThird = document.getElementById("checkboxForThird");
-    if(price == 400) {
+    let checkboxForThird = document.getElementById("checkbox");
+    if(price === 400 && priceIsCorrect) {
         selectForSecond.style.display ="none";
         checkboxForThird.style.display ="none";
         result.innerHTML = "Цена: "+(number*price);
     }
-    if(price == 600) {
+    if(price === 600 && priceIsCorrect) {
         selectForSecond.style.display ="block";
         checkboxForThird.style.display ="none";
         //Подсчет стоимости
@@ -40,10 +37,11 @@ function onChange(event) {
         selectedOption = parseInt(selectedOption[0].value);
         result.innerHTML = "Цена: "+(number*(price + selectedOption));
     }
-    if(price == 800) {
+    if(price === 800 && priceIsCorrect) {
         selectForSecond.style.display ="none";
         checkboxForThird.style.display ="block";
         //ДОДЕЛАТЬ НА ПАРЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕе
+        result.innerHTML = "Цена: "+(number*price);
     }
 
 }
@@ -52,7 +50,8 @@ function onChange(event) {
 function getSelectedProduct(){
     let selectedProduct;
     let Products = document.getElementsByName("product");
-    for(let i = 0; i < Products.length; i++) {
+    let i;
+    for(i = 0; i < Products.length; i+=1) {
         if(Products[i].checked){
             selectedProduct = Products[i].value;
             break;
