@@ -21,6 +21,7 @@ function onChange(event) {
     } else {
         alert("Количество товаров не указано или введены недопустимые символы");
     }
+
     //Изменение html файла при изменении товара
     let selectForSecond = document.getElementById("selectForSecond");
     let checkboxForThird = document.getElementById("checkbox");
@@ -40,10 +41,13 @@ function onChange(event) {
     if(price === 800 && priceIsCorrect) {
         selectForSecond.style.display ="none";
         checkboxForThird.style.display ="block";
-        //ДОДЕЛАТЬ НА ПАРЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕе
-        result.innerHTML = "Цена: "+(number*price);
+        let checkboxValue = document.getElementById("checkboxForThird");
+        let check = 0;
+        if(checkboxValue.checked) {
+            check = 500;
+        }
+        result.innerHTML = "Цена: "+(number*(price + check));
     }
-
 }
 
  //Функция для поиска выбранной радиокнопки
@@ -66,4 +70,6 @@ document.addEventListener("DOMContentLoaded", function() {
     //При выборе другого товара
     let form = document.getElementsByClassName("form");
     form[0].addEventListener("change", onChange);
+    let num = document.getElementById("numberOfProducts");
+    num.addEventListener("input", onChange);
 });
