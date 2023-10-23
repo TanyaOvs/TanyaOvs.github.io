@@ -1,9 +1,6 @@
 $(document).ready(function() {
     $(".gallery").slick({
-        nextArrow: "<img src='images/arrowRight.png' class='next'"+
-            "style=alt='2'>",
-        prevArrow: "<img src='images/arrowLeft.png' class='prev'"+
-            "style= alt='1'>",
+        arrows: true,
         dots: true,
         infinite: true,
         slidesToScroll: 1,
