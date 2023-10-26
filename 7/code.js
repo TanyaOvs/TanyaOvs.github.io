@@ -3,8 +3,6 @@ $(document).ready(function() {
         arrows: true,
         dots: true,
         infinite: true,
-        slidesToScroll: 1,
-        slidesToShow: 3,
          responsive: [
           {
             breakpoint: 1024,
@@ -15,6 +13,8 @@ $(document).ready(function() {
               slidesToShow: 1
             }
           }
-        ]
+        ],
+        slidesToScroll: 1,
+        slidesToShow: 3
       });
     });
