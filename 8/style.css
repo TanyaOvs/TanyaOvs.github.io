@@ -19,7 +19,7 @@ body{
     height: 100%;
     background-color: rgba(43, 23, 42, 0.411);
     margin: -9px auto;
-    /*display: none;*/
+    display: none;
 }
 
 .popup_body{
@@ -42,12 +42,17 @@ body{
     font-size: 20px;
 }
 
-.formElement{
-    padding-bottom: 12px;
+button{
+    background-color: rgb(125, 185, 75);
 }
 
 input, textarea {
     width: 95%;
+    height: 25px;
+}
+
+label{
+    display: block;
 }
 
 .popup_close{
