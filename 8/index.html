@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <title>Задание 8</title>
         <script defer src="code.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slapform@latest/dist/index.min.js"></script>
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -19,48 +20,49 @@
                         <a href="" class="popup_close">x</a>
                         <!-- Форма -->
                         <h2>Форма</h2>
-                        <div class="form">
+                        <div id="form" class="form">
                             <form method="POST" action="https://api.slapform.com/UeL2Iaq5l">
                                 <label>
                                     ФИО:<br>
-                                    <input name="FIO"
+                                    <input id="FIO" name="FIO"
                                     type="text"
                                     placeholder="Иванов Иван Иванович">
                                 </label><br> 
 
                                 <label>
                                     E-mail:<br>
-                                    <input name="email" type="email" placeholder="Введите вашу почту">
+                                    <input id="email" name="email" type="email" placeholder="Введите вашу почту">
                                 </label><br>
                 
                                 <label>
                                     Телефон:<br>
-                                    <input name="phone"
+                                    <input id="phone" name="phone"
                                     type="tel"
                                     placeholder="Введите номер телефона">
                                 </label><br>
 
                                 <label>
                                     Организация:<br>
-                                    <input name="organis"
+                                    <input id="organis" name="organis"
                                     type="text"
                                     placeholder="Введите организацию">
                                 </label><br>
 
                                 <label>
                                     Сообщение: <br>
-                                    <textarea name="message" placeholder="Напишите сообщение"></textarea>
+                                    <textarea id="message" name="message" placeholder="Напишите сообщение"></textarea>
                                 </label><br>
 
                                 C политикой обработки персональных данных ознакомлен(а) <br>
                                 <label>
-                                    <input type="checkbox" name="check" required>
+                                    <input id="checkboxForm" type="checkbox" name="check" required>
                                 </label><br>
                                 
                                 <label>
-                                    <button type="submit">Отправить</button>
+                                    <button id="sendButton" type="button">Отправить</button>
                                 </label>
                             </form>
+                            <div id="resultForUser"></div>
                         </div>
                     </div>
                 </div>
