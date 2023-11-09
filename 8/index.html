@@ -5,95 +5,87 @@
     <head>
         <meta charset="UTF-8">
         <title>Задание 8</title>
+        <script defer src="code.js"></script>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
 
     <body>
-        <!-- Шапка сайта -->
-        <header class="header mb-3">
-            <div class="container-fluid">
-                <div class="row justify-content-md-between">
-                    <div>
-                        <div class="main_header d-flex align-items-center">
-                            <img id="kitty_id" src="kitty.png" alt="Логотип сайта с котиком" class="mr-4">
-                            <h1 class="header_name">Моя форма</h1>
+        <div>
+          <div class="content">
+
+            <button class="getForm">Открыть форму</button>
+
+            <div id="popup" class="popup">
+                <div class="popup_body">
+                    <div class="popup_content">
+                        <a href="" class="popup_close">x</a>
+                        <!-- Форма -->
+                        <h2>Форма</h2>
+                        <div class="form">
+                            <form method="POST" action="https://api.slapform.com/UeL2Iaq5l">
+                            <ol>
+                                <li class="formElement">
+                                    <label>
+                                    ФИО:<br />
+                                    <input name="FIO"
+                                    type="text"
+                                    placeholder="Иванов Иван Иванович" />
+                                </label><br />
+                                </li>
+
+                                <li class="formElement">
+                                    <label>
+                                    E-mail:<br />
+                                    <input name="email"
+                                    type="email"
+                                    placeholder="Введите вашу почту" />
+                                    </label><br />
+                                </li>
+                    
+                                <li class="formElement">
+                                    <label>
+                                    Телефон:<br />
+                                    <input name="phone"
+                                    type="tel"
+                                    placeholder="Введите номер телефона" />
+                                    </label><br />
+                                </li>
+
+                                <li class="formElement">
+                                    <label>
+                                    Организация:<br />
+                                    <input name="organis"
+                                    type="text"
+                                    placeholder="Введите организацию" />
+                                    </label><br />
+                                </li>
+                    
+                                <li class="formElement">
+                                    <label>
+                                    Сообщение: <br />
+                                    <textarea name="message" placeholder="Напишите сообщение"></textarea>
+                                    </label><br />
+                                </li>
+                    
+                                <li class="formElement"> 
+                                    C политикой обработки персональных данных ознакомлен(а) <br />
+                                    <label><input type="checkbox" name="check" required/></label><br />
+                                </li>
+                    
+                                <li class="formElement"><button type="submit">Отправить</button></li>
+                                </ol>
+                            </form>
+
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
 
-        <div class="container w-100" style="max-width: 960px">
-          <div class="row">
-            <!-- Форма -->
-            <div class="form order-3">
-                <h2>Форма</h2>
-                <form method="POST" action="https://api.slapform.com/UeL2Iaq5l">
-                  <ol>
-                      <li>
-                          <label>
-                          ФИО:<br />
-                          <input name="FIO"
-                          type="text"
-                          placeholder="Иванов Иван Иванович" />
-                      </label><br />
-                      </li>
-
-                      <li>
-                        <label>
-                        E-mail:<br />
-                        <input name="email"
-                        type="email"
-                        placeholder="Введите вашу почту" />
-                        </label><br />
-                      </li>
-          
-                      <li>
-                          <label>
-                          Телефон:<br />
-                          <input name="phone"
-                          type="tel"
-                          placeholder="Введите номер телефона" />
-                          </label><br />
-                      </li>
-
-                      <li>
-                        <label>
-                        Организация:<br />
-                        <input name="organis"
-                        type="text"
-                        placeholder="Введите организацию" />
-                        </label><br />
-                      </li>
-          
-                      <li>
-                          <label>
-                          Сообщение: <br />
-                          <textarea name="message" placeholder="Напишите сообщение"></textarea>
-                          </label><br />
-                      </li>
-          
-                      <li> 
-                          Соглашение: <br />
-                      <label class="sogl"><input type="checkbox" name="check" required/>
-                          C политикой обработки персональных данных ознакомлен(а)</label><br />
-                      </li>
-          
-                      <li><input type="submit" value="Сохранить" /></li>
-                    </ol>
-                </form>
-            </div>
+            
           </div>
         </div>
-
-        <footer class="mt-5">
-            <div class="container">
-              <p>(c) Овсянникова Татьяна 2023</p>
-            </div>
-        </footer>
 
     </body>
 
