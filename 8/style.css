@@ -1,6 +1,28 @@
+.header{
+    display: flex;
+    width: 100%;
+    background-color:#68006C;
+    margin-bottom: 30px;
+}
+
+.header_elements{
+    display: flex;
+}
+
+.header_name{
+    color:azure;
+    font: small-caps bold 1.2rem sans-serif;
+    font-size: 36px;
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 body{
     text-align: center;
     font-family: Arial, sans-serif;
+    margin: 0;
+    background-color:#e4aae7;
 }
 
 .content{
@@ -11,14 +33,18 @@ body{
 .getForm{
     right:auto;
     left: auto;
+    width: 150px;
+    height: 80px;
+    font-size: medium;
+    background-color: rgb(112, 207, 92);
 }
 
 .popup{
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(43, 23, 42, 0.411);
-    margin: -9px auto;
+    background-color: rgba(82, 44, 80, 0.411);
+    margin: auto auto;
     display: none;
 }
 
@@ -43,7 +69,9 @@ body{
 }
 
 button{
-    background-color: rgb(125, 185, 75);
+    background-color: rgb(112, 207, 92);
+    width: 120px;
+    height: 40px;
 }
 
 input, textarea {
