@@ -1,16 +1,16 @@
 function saveFormValues() {
-    const formValues = {};
-    Array.from(form.elements).forEach(element => {
+    let form = document.getElementById("form");
+    let formValues = {};
+    Array.from(form.elements).forEach((element) => {
         if (element.name) {
             formValues[element.name] = element.value;
         }
     });
-    localStorage.setItem('formValues', JSON.stringify(formValues));
+    localStorage.setItem("formValues", JSON.stringify(formValues));
 }
 
 function sendFormToServer(event) {
     event.preventDefault();
-    const messageDiv = document.getElementById('resultForUser');
     const formData = {
         name: document.getElementById("FIO").value,
         email: document.getElementById("email").value,
@@ -22,17 +22,24 @@ function sendFormToServer(event) {
     var slapform = new Slapform();
     slapform.submit({
         form: 'UeL2Iaq5l',
-        data: formData,
+        data: formData
     })
         .then(function (response) {
             console.log('Success', response)
-            messageDiv.textContent = 'Форма успешно отправлена!';
-            saveFormValues();
+            /*saveFormValues();*/
+            alert("Форма успешно отправлена!");
         })
         .catch(function (e) {
             console.error('Fail', e)
-            messageDiv.textContent = 'Ошибка при отправке формы. Пожалуйста, попробуйте снова.';
+           alert("Ошибка при отправке формы. Пожалуйста, попробуйте снова.");
         })
+
+        saveFormValues();
+        setTimeout(function () {
+            let form = document.getElementById("form");
+            form.reset();
+            localStorage.removeItem("formData");
+        }, 1000);
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -45,17 +52,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     getForm[0].addEventListener("click", function (){
         popup.style.display = "block";
-        history.pushState({ page: "Form" }, null, "?Form"); 
+        history.pushState(null, "Форма", "?form");
     });
 
-    popup_close[0].addEventListener("click", function () {
+    popup_close[0].addEventListener("click", function (e) {
+        e.preventDefault();
         popup.style.display = "none";
-        history.pushState(null, null, '/8');
+        history.back();
       });
 
     window.addEventListener("popstate", function () {
         popup.style.display = "none";
-        history.pushState(null, null, '/8');
+        history.back();
       });
 });
 
